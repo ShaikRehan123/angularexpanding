@@ -1,0 +1,15 @@
+<!-- <h1>Hello I'm creating expanding cards</h1> -->
+<div
+  style="background-color: gray; width: 500px; height: 50px"
+  [style.height]="isCardOpen ? '500px' : '50px'"
+  [style.width]="isCardOpen ? '500px' : '200px'"
+  class="trantiton_styles"
+>
+  <div class="headerStyles">
+    <span>Hello</span>
+    <button (click)="toggleCard()">Toggle</button>
+  </div>
+  <div class="conditionalDiv" *ngIf="isCardOpen == true">
+    <span>I am Conditional</span>
+  </div>
+</div>

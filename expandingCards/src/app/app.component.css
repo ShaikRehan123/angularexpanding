@@ -1,0 +1,10 @@
+.trantiton_styles{
+    transition: all 0.5s ease;
+    padding: 15px;
+    
+}
+.headerStyles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
